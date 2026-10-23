@@ -2,7 +2,7 @@ import AuthPage from "./AuthPage";
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/movies";
+const API_URL = "https://cinebook-1-494j.onrender.com/api/movies";
 
 const ROWS = ["A", "B", "C", "D", "E"];
 const SEATS_PER_ROW = 10;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./AuthPage.css";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://cinebook-1-494j.onrender.com/api/auth";
 
 function AuthPage({ onBack, onAuthSuccess }) {
   const [isRegister, setIsRegister] = useState(true);
