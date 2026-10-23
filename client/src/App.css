@@ -1,0 +1,256 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #101018;
+  color: #f8f8fc;
+}
+
+.navbar {
+  min-height: 75px;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #292936;
+  background: #15151f;
+}
+
+.brand {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.brand span,
+h1 {
+  color: #ffffff !important;
+}
+
+h1 .camera-text {
+  color: #ffffff !important;
+}
+
+h1 .action-text {
+  color: #ff3333 !important;
+}
+
+.container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+.hero {
+  padding: 65px 0 45px;
+}
+
+.eyebrow {
+  color: #ff7189;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 5vw, 58px);
+  margin: 14px 0;
+}
+
+.hero > p:last-child,
+.section-heading p {
+  color: #aaaabd;
+  line-height: 1.6;
+}
+
+.catalog {
+  padding-bottom: 60px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-heading h2 {
+  margin-bottom: 5px;
+}
+
+.movie-count {
+  color: #ff7189;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.filters input,
+.filters select {
+  padding: 13px;
+  color: white;
+  background: #1d1d2a;
+  border: 1px solid #393949;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 0;
+}
+
+.filters select {
+  max-width: 180px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.movie-card {
+  overflow: hidden;
+  border: 1px solid #2e2e3c;
+  border-radius: 13px;
+  background: #1a1a25;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.poster-wrap {
+  position: relative;
+  height: 340px;
+  background: #292938;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.rating {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: #101018e8;
+  color: #ffd166;
+  font-size: 13px;
+}
+
+.movie-info {
+  padding: 18px;
+}
+
+.genre {
+  color: #ff7189;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.movie-info h3 {
+  margin: 10px 0;
+  font-size: 19px;
+}
+
+.movie-info p {
+  color: #b6b6c8;
+  font-size: 13px;
+}
+
+.movie-info .seats {
+  color: #f8f8fc;
+}
+
+.book-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  background: #ff4d6d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background: #e93657;
+}
+
+.book-button:disabled {
+  background: #555563;
+  cursor: not-allowed;
+}
+
+.message {
+  padding: 12px;
+  background: #202b29;
+  color: #a8f0cf;
+  border-radius: 8px;
+}
+
+.empty {
+  color: #b6b6c8;
+  padding: 25px 0;
+}
+
+footer {
+  padding: 25px;
+  border-top: 1px solid #292936;
+  text-align: center;
+  color: #aaaabd;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .nav-label {
+    display: none;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters select {
+    max-width: none;
+  }
+
+  .poster-wrap {
+    height: 380px;
+  }
+}
+.camera-text {
+  color: #ffffff;
+}
+
+h1 span:last-child {
+  color: #ff3333;
+}
+.showing-text {
+  color: #ffffff !important;
+}
+h2 {
+  color: #ffffff !important;
+}
+
+h2 + p {
+  color: #cccccc !important;
+}
